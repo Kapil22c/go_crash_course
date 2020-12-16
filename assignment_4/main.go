@@ -19,7 +19,7 @@ func main() {
 
 //index page
 func Index(w http.ResponseWriter, res *http.Request) {
-	log.Println("run index")
+	log.Println("run index page")
 	temp, err := template.ParseFiles("Index.html")
 	if err != nil {
 
@@ -28,12 +28,12 @@ func Index(w http.ResponseWriter, res *http.Request) {
 	if err != nil {
 
 	}
-	log.Println("stop index")
+	log.Println("stop index page")
 
 }
 
 func About(w http.ResponseWriter, res *http.Request) {
-	log.Println("run about")
+	log.Println("run about page")
 
 	temp, err := template.ParseFiles("about.html")
 	if err != nil {
@@ -43,5 +43,5 @@ func About(w http.ResponseWriter, res *http.Request) {
 	if err != nil {
 
 	}
-	log.Println("stop about")
+	log.Println("stop about page")
 }
