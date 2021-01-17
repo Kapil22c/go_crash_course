@@ -92,7 +92,7 @@ func gingonic() {
 
 	r := gin.Default()
 	r.POST("/books", CalculatePrice)
-	r.Run(":8054")
+	r.Run(":8080")
 }
 
 func CalculatePrice(c *gin.Context) {
