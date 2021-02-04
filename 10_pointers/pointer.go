@@ -32,7 +32,7 @@ func main() {
 
 func greet(greeting, name *string) {
 	fmt.Println(*greeting, *name)
-	*name = "Kumar"
+	*name = "bavisiya"
 	fmt.Println(*name)
 }
 
